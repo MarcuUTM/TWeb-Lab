@@ -5,200 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChipZilla — Performance Unleashed</title>
     <meta name="description" content="ChipZilla oferă servicii profesionale de chip tuning auto pentru creșterea performanței motorului. Experiență, echipament modern și garanție.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <!-- Header -->
-    <header>
-        <div>
-            <a href="#home">
-                <span>Chip<span>Zilla</span></span>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#home" class="logo">
+                <span class="logo-text">Chip<span>Zilla</span></span>
             </a>
-            <nav>
-                <ul>
+            <nav class="nav">
+                <ul class="nav-list">
                     <li><a href="#servicii">Servicii</a></li>
                     <li><a href="#despre">Despre</a></li>
                     <li><a href="#avantaje">De ce noi</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <a href="#contact">Solicită ofertă <span>&rarr;</span></a>
-            <button aria-label="Toggle menu">
+            <a href="#contact" class="header-cta">Solicită ofertă <span>&rarr;</span></a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
     </header>
+
     <!-- Hero Section -->
-    <section id="home">
-        <div>
-            <div>
-                <div>
-                    <span></span>
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="img/hero-bg.jpg" alt="" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
                     Chip Tuning Profesional
                 </div>
-                <h1>
+                <h1 class="hero-title">
                     Eliberează Puterea<br>
                     Ascunsă a Mașinii Tale
                 </h1>
-                <p>
+                <p class="hero-subtitle">
                     Servicii profesionale de chip tuning pentru performanță maximă și consum optimizat
                 </p>
-                <div>
-                    <a href="#contact">
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
                         Solicită ofertă <span>&rarr;</span>
                     </a>
-                    <a href="#servicii">
+                    <a href="#servicii" class="btn btn-ghost">
                         Vezi Servicii <span>&rarr;</span>
                     </a>
                 </div>
-                <div>
-                    <div>
-                        <span>2500</span>
-                        <span>Vehicule Optimizate</span>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value" data-target="2500">0</span>
+                        <span class="stat-label">Vehicule Optimizate</span>
                     </div>
-                    <div></div>
-                    <div>
-                        <span>+<span>35</span>%</span>
-                        <span>Creștere Medie Putere</span>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value">+<span data-target="30">0</span>%</span>
+                        <span class="stat-label">Creștere Medie Putere</span>
                     </div>
-                    <div></div>
-                    <div>
-                        <span><span>5</span>+</span>
-                        <span>Ani Experiență</span>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-value"><span data-target="5">0</span>+</span>
+                        <span class="stat-label">Ani Experiență</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div></div>
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
         </div>
     </section>
+
     <!-- Services Section -->
-    <section id="servicii">
-        <div>
-            <div>
-                <span>Servicii</span>
-                <h2>Soluții de Performanță</h2>
-                <p>Optimizări ECU profesionale pentru fiecare tip de motor și nevoie</p>
+    <section id="servicii" class="section section-services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Servicii</span>
+                <h2 class="section-title">Soluții de Performanță</h2>
+                <p class="section-desc">Optimizări ECU profesionale pentru fiecare tip de motor și nevoie</p>
             </div>
-            <div>
-                <div>
-                    <div>01</div>
+
+            <div class="services-grid">
+                <div class="service-card" data-animate>
+                    <div class="service-number">01</div>
                     <h3>Stage 1 Tuning</h3>
                     <p>Optimizare software ECU pentru creștere instantanee de putere și cuplu. Mapare sigură pentru uz zilnic.</p>
-                    <div>
-                        <div>
-                            <span>+20%</span>
-                            <span>Putere</span>
+                    <div class="service-stats">
+                        <div class="service-stat">
+                            <span class="service-stat-value">+20%</span>
+                            <span class="service-stat-label">Putere</span>
                         </div>
-                        <div>
-                            <span>+35%</span>
-                            <span>Cuplu</span>
+                        <div class="service-stat">
+                            <span class="service-stat-value">+35%</span>
+                            <span class="service-stat-label">Cuplu</span>
                         </div>
                     </div>
-                    <ul>
+                    <ul class="service-features">
                         <li>Optimizare ECU completă</li>
                         <li>Backup original păstrat</li>
                         <li>Garanție inclusă</li>
                     </ul>
                 </div>
-                <div>
-                    <div>02</div>
+
+                <div class="service-card" data-animate>
+                    <div class="service-number">02</div>
                     <h3>Stage 2 Tuning</h3>
                     <p>Upgrade hardware + software pentru performanțe extreme. Necesită modificări mecanice complementare.</p>
-                    <div>
-                        <div>
-                            <span>+35%</span>
-                            <span>Putere</span>
+                    <div class="service-stats">
+                        <div class="service-stat">
+                            <span class="service-stat-value">+35%</span>
+                            <span class="service-stat-label">Putere</span>
                         </div>
-                        <div>
-                            <span>+45%</span>
-                            <span>Cuplu</span>
+                        <div class="service-stat">
+                            <span class="service-stat-value">+45%</span>
+                            <span class="service-stat-label">Cuplu</span>
                         </div>
                     </div>
-                    <ul>
+                    <ul class="service-features">
                         <li>Mapare agresivă</li>
                         <li>Suport hardware upgrade</li>
                         <li>Verificare completă</li>
                     </ul>
                 </div>
-                <div>
-                    <div>03</div>
+
+                <div class="service-card" data-animate>
+                    <div class="service-number">03</div>
                     <h3>Eco Tuning</h3>
                     <p>Optimizare pentru eficiență maximă. Reducere consum cu menținerea performanțelor standard.</p>
-                    <div>
-                        <div>
-                            <span>-15%</span>
-                            <span>Consum</span>
+                    <div class="service-stats">
+                        <div class="service-stat">
+                            <span class="service-stat-value">-15%</span>
+                            <span class="service-stat-label">Consum</span>
                         </div>
-                        <div>
-                            <span>-20%</span>
-                            <span>Emisii</span>
+                        <div class="service-stat">
+                            <span class="service-stat-value">-20%</span>
+                            <span class="service-stat-label">Emisii</span>
                         </div>
                     </div>
-                    <ul>
+                    <ul class="service-features">
                         <li>Răspuns îmbunătățit</li>
                         <li>Economie combustibil</li>
                         <li>Emisii reduse</li>
                     </ul>
                 </div>
-                <div>
-                    <div>04</div>
+
+                <div class="service-card" data-animate>
+                    <div class="service-number">04</div>
                     <h3>DPF / EGR Delete</h3>
                     <p>Dezactivare profesională DPF, FAP, EGR. Eliminare probleme repetitive și costuri de întreținere.</p>
-                    <div>
-                        <div>
-                            <span>100%</span>
-                            <span>Soluție</span>
+                    <div class="service-stats">
+                        <div class="service-stat">
+                            <span class="service-stat-value">100%</span>
+                            <span class="service-stat-label">Soluție</span>
                         </div>
-                        <div>
-                            <span>0</span>
-                            <span>Probleme</span>
+                        <div class="service-stat">
+                            <span class="service-stat-value">0</span>
+                            <span class="service-stat-label">Probleme</span>
                         </div>
                     </div>
-                    <ul>
+                    <ul class="service-features">
                         <li>Fără regenerări DPF</li>
                         <li>Motor mai sănătos</li>
                         <li>Durabilitate crescută</li>
                     </ul>
                 </div>
-                <div>
-                    <div>05</div>
+
+                <div class="service-card" data-animate>
+                    <div class="service-number">05</div>
                     <h3>Diagnostic Complet</h3>
                     <p>Scanare completă sisteme electronice. Rapoarte detaliate cu parametri live și istorice.</p>
-                    <div>
-                        <div>
-                            <span>50+</span>
-                            <span>Module</span>
+                    <div class="service-stats">
+                        <div class="service-stat">
+                            <span class="service-stat-value">50+</span>
+                            <span class="service-stat-label">Module</span>
                         </div>
-                        <div>
-                            <span>&infin;</span>
-                            <span>Date</span>
+                        <div class="service-stat">
+                            <span class="service-stat-value">&infin;</span>
+                            <span class="service-stat-label">Date</span>
                         </div>
                     </div>
-                    <ul>
+                    <ul class="service-features">
                         <li>Citire erori complete</li>
                         <li>Parametri live data</li>
                         <li>Raport PDF inclus</li>
                     </ul>
                 </div>
-                <div>
-                    <div>Custom</div>
-                    <div>06</div>
+
+                <div class="service-card service-card-featured" data-animate>
+                    <div class="featured-label">Custom</div>
+                    <div class="service-number">06</div>
                     <h3>Mapare Custom</h3>
                     <p>Dezvoltare software personalizat pentru cerințe specifice: racing, off-road, tractare utilaje.</p>
-                    <div>
-                        <div>
-                            <span>1:1</span>
-                            <span>Personal</span>
+                    <div class="service-stats">
+                        <div class="service-stat">
+                            <span class="service-stat-value">1:1</span>
+                            <span class="service-stat-label">Personal</span>
                         </div>
-                        <div>
-                            <span>MAX</span>
-                            <span>Performanță</span>
+                        <div class="service-stat">
+                            <span class="service-stat-value">MAX</span>
+                            <span class="service-stat-label">Performanță</span>
                         </div>
                     </div>
-                    <ul>
+                    <ul class="service-features">
                         <li>Consultanță dedicată</li>
                         <li>Mapare pe măsură</li>
                         <li>Suport continuu</li>
@@ -207,91 +228,93 @@
             </div>
         </div>
     </section>
+
     <!-- About Section -->
-    <section id="despre">
-        <div>
-            <div>
-                <div>
-                    <span>Despre noi</span>
-                    <h2>Expertiză în<br>Optimizare ECU</h2>
-                    <div>
+    <section id="despre" class="section section-about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content" data-animate>
+                    <span class="section-tag">Despre noi</span>
+                    <h2 class="section-title">Expertiză în<br>Optimizare ECU</h2>
+                    <div class="about-text">
                         <p>Cu peste <strong>5 ani de experiență</strong> în domeniul chip tuning-ului auto, ChipZilla reprezintă excelența în optimizarea performanței vehiculelor moderne.</p>
                         <p>Utilizăm echipamente profesionale de top — <strong>Flex Motosport</strong> — și colaborăm direct cu cei mai importanți dezvoltatori de software pentru mapări sigure și testate.</p>
                         <p>Fiecare proiect este tratat individual, cu mapări dezvoltate specific pentru motorul tău, nu soluții generice copiate.</p>
                     </div>
-                    <div>
-                        <div>
+                    <div class="tech-grid">
+                        <div class="tech-item">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                             <span>Flex Motosport</span>
                         </div>
-                        <div>
+                        <div class="tech-item">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                             <span>Echipament Pro</span>
                         </div>
-                        <div>
+                        <div class="tech-item">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01"/><path d="M6 12h.01M10 12h.01M14 12h.01"/><path d="M6 16h.01M10 16h.01M14 16h.01M18 16h.01"/></svg>
                             <span>Software Licențiat</span>
                         </div>
-                        <div>
+                        <div class="tech-item">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
                             <span>Mapări Testate</span>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <div>
+
+                <div class="about-visual" data-animate>
+                    <div class="performance-card">
+                        <div class="performance-header">
                             <span>Performanță Medie</span>
-                            <span>98%</span>
+                            <span class="performance-value">98%</span>
                         </div>
-                        <div>
-                            <div>
-                                <div>
+                        <div class="performance-bars">
+                            <div class="perf-bar">
+                                <div class="perf-bar-header">
                                     <span>Putere</span>
                                     <span>+95%</span>
                                 </div>
-                                <div>
-                                    <div></div>
+                                <div class="perf-bar-track">
+                                    <div class="perf-bar-fill" data-percent="95"></div>
                                 </div>
                             </div>
-                            <div>
-                                <div>
+                            <div class="perf-bar">
+                                <div class="perf-bar-header">
                                     <span>Cuplu</span>
                                     <span>+98%</span>
                                 </div>
-                                <div>
-                                    <div></div>
+                                <div class="perf-bar-track">
+                                    <div class="perf-bar-fill" data-percent="98"></div>
                                 </div>
                             </div>
-                            <div>
-                                <div>
+                            <div class="perf-bar">
+                                <div class="perf-bar-header">
                                     <span>Răspuns</span>
                                     <span>+100%</span>
                                 </div>
-                                <div>
-                                    <div></div>
+                                <div class="perf-bar-track">
+                                    <div class="perf-bar-fill" data-percent="100"></div>
                                 </div>
                             </div>
-                            <div>
-                                <div>
+                            <div class="perf-bar">
+                                <div class="perf-bar-header">
                                     <span>Eficiență</span>
                                     <span>+92%</span>
                                 </div>
-                                <div>
-                                    <div></div>
+                                <div class="perf-bar-track">
+                                    <div class="perf-bar-fill" data-percent="92"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="cert-row">
+                        <div class="cert-badge">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
                             <div>
                                 <strong>Certificare</strong>
                                 <span>Internațională</span>
                             </div>
                         </div>
-                        <div>
+                        <div class="cert-badge">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
                             <div>
                                 <strong>Garanție</strong>
@@ -303,52 +326,59 @@
             </div>
         </div>
     </section>
+
     <!-- Advantages Section -->
-    <section id="avantaje">
-        <div>
-            <div>
-                <span>De ce noi</span>
-                <h2>De ce ChipZilla?</h2>
-                <p>Motivele pentru care clienții noștri ne aleg de fiecare dată</p>
+    <section id="avantaje" class="section section-advantages">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="section-tag">De ce noi</span>
+                <h2 class="section-title">De ce ChipZilla?</h2>
+                <p class="section-desc">Motivele pentru care clienții noștri ne aleg de fiecare dată</p>
             </div>
-            <div>
-                <div>
-                    <div>
+
+            <div class="advantages-grid">
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                     </div>
                     <h3>Echipament Profesional</h3>
                     <p>Hardware de ultimă generație de la Flex Motosport</p>
                 </div>
-                <div>
-                    <div>
+
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
                     </div>
                     <h3>Backup Garantat</h3>
                     <p>Fișierul original este păstrat permanent pentru siguranța ta</p>
                 </div>
-                <div>
-                    <div>
+
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 6 3 12 0v-5"/></svg>
                     </div>
                     <h3>Expertiză Certificată</h3>
                     <p>Specialiști cu certificări internaționale și pregătire continuă</p>
                 </div>
-                <div>
-                    <div>
+
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
                     </div>
                     <h3>Flex Motosport</h3>
                     <p>Parteneriat cu echipamente și software de top din industrie</p>
                 </div>
-                <div>
-                    <div>
+
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                     </div>
                     <h3>Rapid și Eficient</h3>
                     <p>Finalizare în doar 1-3 ore, fără programări pe termen lung</p>
                 </div>
-                <div>
-                    <div>
+
+                <div class="advantage-card" data-animate>
+                    <div class="advantage-icon">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     </div>
                     <h3>Garanție Completă</h3>
@@ -357,18 +387,20 @@
             </div>
         </div>
     </section>
+
     <!-- Contact Section -->
-    <section id="contact">
-        <div>
-            <div>
-                <span>Contact</span>
-                <h2>Hai să vorbim</h2>
-                <p>Completează formularul sau contactează-ne direct</p>
+    <section id="contact" class="section section-contact">
+        <div class="container">
+            <div class="section-header section-header-center">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Hai să vorbim</h2>
+                <p class="section-desc">Completează formularul sau contactează-ne direct</p>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-animate>
+                    <div class="info-card">
+                        <div class="info-icon">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                         </div>
                         <div>
@@ -376,8 +408,9 @@
                             <p>Str. Alexei Mateevici 22<br>Ialoveni, Moldova</p>
                         </div>
                     </div>
-                    <div>
-                        <div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                         </div>
                         <div>
@@ -385,8 +418,9 @@
                             <p><a href="tel:+37360954516">+373 (60) 954516</a></p>
                         </div>
                     </div>
-                    <div>
-                        <div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         </div>
                         <div>
@@ -394,8 +428,9 @@
                             <p><a href="mailto:contact@chipzilla.ro">contact@chipzilla.md</a></p>
                         </div>
                     </div>
-                    <div>
-                        <div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
                             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
                         </div>
                         <div>
@@ -404,26 +439,30 @@
                         </div>
                     </div>
                 </div>
-                <form id="contactForm">
-                    <div>
+
+                <form class="contact-form" id="contactForm" data-animate>
+                    <div class="form-group">
                         <label for="name">Nume complet</label>
                         <input type="text" id="name" name="name" placeholder="Marius Bivol" required>
                     </div>
-                    <div>
-                        <div>
+
+                    <div class="form-row-2col">
+                        <div class="form-group">
                             <label for="email">Email</label>
                             <input type="email" id="email" name="email" placeholder="exemplu@email.com" required>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="phone">Telefon</label>
                             <input type="tel" id="phone" name="phone" placeholder="+373 (XX) XXXXXX" required>
                         </div>
                     </div>
-                    <div>
+
+                    <div class="form-group">
                         <label for="vehicle">Vehicul</label>
                         <input type="text" id="vehicle" name="vehicle" placeholder="Marca, model, motorizare">
                     </div>
-                    <div>
+
+                    <div class="form-group">
                         <label for="service">Serviciu dorit</label>
                         <select id="service" name="service">
                             <option value="">Selectează serviciul</option>
@@ -435,28 +474,32 @@
                             <option value="custom">Mapare Custom</option>
                         </select>
                     </div>
-                    <div>
+
+                    <div class="form-group">
                         <label for="message">Mesaj</label>
                         <textarea id="message" name="message" rows="4" placeholder="Descrie cerința ta..."></textarea>
                     </div>
-                    <button type="submit">
+
+                    <button type="submit" class="btn btn-primary btn-full">
                         Trimite mesaj <span>&rarr;</span>
                     </button>
                 </form>
             </div>
         </div>
     </section>
+
     <!-- Footer -->
-    <footer>
-        <div>
-            <div>
-                <div>
-                    <a href="#home">
-                        <span>Chip<span>Zilla</span></span>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">Chip<span>Zilla</span></span>
                     </a>
                     <p>Expertiză și pasiune pentru performanță auto. Fiecare motor merită să fie optimizat la potențial maxim.</p>
                 </div>
-                <div>
+
+                <div class="footer-col">
                     <h4>Navigare</h4>
                     <ul>
                         <li><a href="#home">Acasă</a></li>
@@ -465,7 +508,8 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div>
+
+                <div class="footer-col">
                     <h4>Servicii</h4>
                     <ul>
                         <li><a href="#servicii">Stage 1 Tuning</a></li>
@@ -474,7 +518,8 @@
                         <li><a href="#servicii">DPF Delete</a></li>
                     </ul>
                 </div>
-                <div>
+
+                <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
                         <li>Str. Alexei Mateevici 22</li>
@@ -484,9 +529,10 @@
                     </ul>
                 </div>
             </div>
-            <div>
+
+            <div class="footer-bottom">
                 <p>&copy; 2026 ChipZilla. Toate drepturile rezervate.</p>
-                <div>
+                <div class="footer-legal">
                     <a href="#">Termeni</a>
                     <a href="#">Confidențialitate</a>
                     <a href="#">GDPR</a>
@@ -494,5 +540,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
